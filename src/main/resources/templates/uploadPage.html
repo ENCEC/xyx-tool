@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>YXF WORK TOOL</h1>
+<div style="display: flex">
+    <div style="width: 25%">
+        <span>日报</span>
+        <form method="POST" action="/shop/generatorScreenDayReport" enctype="multipart/form-data">
+            <input type="file" name="file"/><br/><br/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+    <div style="width: 25%">
+        <span>月报</span>
+        <form method="POST" action="/shop/generatorScreenMonthReport" enctype="multipart/form-data">
+            <input type="file" name="file"/><br/><br/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>
