@@ -83,6 +83,16 @@
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
         </dependency>
+        <!--springboot集成Aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <!--spring boot 集成redis所需common-pool2-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

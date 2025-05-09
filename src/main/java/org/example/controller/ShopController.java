@@ -1,6 +1,8 @@
 package org.example.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.example.annotion.RepeatSubmit;
+import org.example.annotion.SysLog;
 import org.example.service.ShopService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,6 +26,8 @@ public class ShopController {
 
     @GetMapping("/test")
     @ResponseBody
+    @SysLog
+    @RepeatSubmit
     public String test() {
         return "hello test content";
     }
