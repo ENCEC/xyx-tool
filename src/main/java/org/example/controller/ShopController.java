@@ -29,6 +29,7 @@ public class ShopController {
     @SysLog
     @RepeatSubmit
     public String test() {
+        log.info("execute test method");
         return "hello test content";
     }
 
